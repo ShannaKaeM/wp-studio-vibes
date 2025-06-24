@@ -1,0 +1,93 @@
+[23-Jun-2025 17:09:58 UTC] PHP Fatal error:  Uncaught Error: Class "ShadowPlugin" not found in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:383
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php(387): shadowPlugin()
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(545): include_once('/Users/shannami...')
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/shannami...')
+#5 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 383
+[23-Jun-2025 17:11:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SHADOW_PLUGIN_BASENAME" in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:85
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(324): StudioPlugin->onInit('')
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(727): do_action('init')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#5 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#6 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/shannami...')
+#7 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 85
+[23-Jun-2025 17:12:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SHADOW_PLUGIN_BASENAME" in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:85
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(324): StudioPlugin->onInit('')
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(727): do_action('init')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#5 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#6 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/admin.php(35): require_once('/Users/shannami...')
+#7 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/plugins.php(10): require_once('/Users/shannami...')
+#8 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 85
+[23-Jun-2025 17:12:59 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SHADOW_PLUGIN_BASENAME" in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:85
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(324): StudioPlugin->onInit('')
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(727): do_action('init')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#5 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#6 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-blog-header.php(13): require_once('/Users/shannami...')
+#7 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/index.php(17): require('/Users/shannami...')
+#8 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 85
+[23-Jun-2025 17:13:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SHADOW_PLUGIN_BASENAME" in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:85
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(324): StudioPlugin->onInit('')
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(727): do_action('init')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#5 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#6 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/admin.php(35): require_once('/Users/shannami...')
+#7 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/index.php(10): require_once('/Users/shannami...')
+#8 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 85
+[23-Jun-2025 17:13:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SHADOW_PLUGIN_BASENAME" in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:85
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(324): StudioPlugin->onInit('')
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(727): do_action('init')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#5 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#6 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-blog-header.php(13): require_once('/Users/shannami...')
+#7 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/index.php(17): require('/Users/shannami...')
+#8 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 85
+[23-Jun-2025 17:13:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SHADOW_PLUGIN_BASENAME" in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:85
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(324): StudioPlugin->onInit('')
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(727): do_action('init')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#5 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#6 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/admin.php(35): require_once('/Users/shannami...')
+#7 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/user/admin.php(12): require_once('/Users/shannami...')
+#8 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-admin/user/index.php(11): require_once('/Users/shannami...')
+#9 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 85
+[23-Jun-2025 17:13:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SHADOW_PLUGIN_BASENAME" in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php:85
+Stack trace:
+#0 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(324): StudioPlugin->onInit('')
+#1 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-settings.php(727): do_action('init')
+#4 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-config.php(103): require_once('/Users/shannami...')
+#5 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-load.php(50): require_once('/Users/shannami...')
+#6 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-blog-header.php(13): require_once('/Users/shannami...')
+#7 /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/index.php(17): require('/Users/shannami...')
+#8 {main}
+  thrown in /Users/shannamiddleton/Local Drive Mac/mi agency/miProjects/the-studio/app/public/wp-content/plugins/the-studio-plugin/shadow-plugin.php on line 85

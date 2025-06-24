@@ -1,0 +1,6 @@
+# Theme Options - Sizing
+
+I am thinking that we could do somethign similar to the typography presets here where we have a default sizing system that uses the base size and creates larger/smaller variations using calculations for thigns like rounded cornders, boarder widths, padding, margin, etc. What is cool about it is that the presets can accept dropdown options from the foundation sizing section and use those as the calculation anchor or the user can use a calculation nice thing is this gets them fine tuning without needing to create new css variables.   This also makes me thing we can simplify the scales for the foundation sizing section because users can use in between sizes in the presets like border width 1.32 and since it is useing the base size calculator it will work without needing to creat additional css variables.. etc. 
+
+
+
