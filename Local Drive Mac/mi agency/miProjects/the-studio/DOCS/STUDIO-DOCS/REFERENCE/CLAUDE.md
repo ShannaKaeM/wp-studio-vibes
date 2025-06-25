@@ -255,13 +255,45 @@ After discussion with Daniel, implementing **Text Types** approach instead of di
 **Functional**: `.label`, `.button-text`, `.link`, `.quote`, `.code`, `.meta`, `.error`, `.success`, `.warning`
 
 ### **NEW ARCHITECTURE: GStyles System**
+**Based on**: VARIABLES-V3-Daniels with semantic text type improvements
 **Replaces**: Current theme.js + tokens.js with single comprehensive system
+
+#### **Daniel's Existing Dual System (KEEP BOTH):**
+```css
+/* 1. PROSE SYSTEM: Auto-styles HTML tags in content */
+.prose h1 { /* WordPress content, blog posts, user content */ }
+.prose h2 { /* Automatic styling for actual HTML tags */ }
+.prose h3 { /* Essential for content management */ }
+
+/* 2. COMPONENT CLASSES: Design flexibility (IMPROVE THESE) */
+.h1 { /* Generic - will become .title */ }
+.h2 { /* Generic - will become .subtitle */ }
+.h3 { /* Generic - will become .subhead */ }
+```
+
+#### **Our Semantic Improvements:**
+```css
+/* ✅ KEEP: Daniel's prose system for WordPress content */
+.prose h1, .prose h2, .prose h3 { /* unchanged */ }
+
+/* 🔄 UPGRADE: Generic component classes to semantic text types */
+.title     { /* Main page/section titles */ }
+.subtitle  { /* Secondary headings */ }
+.pretitle  { /* Small text above titles */ }
+.eyebrow   { /* Tiny category labels */ }
+.subhead   { /* Section subheadings */ }
+.lead      { /* Large intro text */ }
+.body      { /* Regular paragraph text */ }
+.caption   { /* Image/media captions */ }
+.label     { /* Form/UI labels */ }
+.meta      { /* Dates, authors, metadata */ }
+```
 
 #### **New Folder Structure:**
 ```
 src/
 ├── gstyles/
-│   └── gstyles.css          # Complete design system (VARIABLES-V3-Daniels based)
+│   └── gstyles.css          # VARIABLES-V3-Daniels + semantic text types
 ├── theme/                   # REMOVE ENTIRE FOLDER
 │   ├── theme.js             # DELETE
 │   ├── tokens.js            # DELETE  
@@ -269,28 +301,34 @@ src/
 ```
 
 #### **Benefits:**
-- ✅ **Single Source**: One file for entire design system
-- ✅ **Familiar**: Tailwind-style naming Shanna knows
-- ✅ **Complete**: Everything from VARIABLES-V3-Daniels (1,760+ lines)
-- ✅ **Semantic**: Text types independent of HTML tags
-- ✅ **GenerateBlocks Compatible**: Matches their architecture
+- ✅ **Dual System**: PROSE (content) + Components (design flexibility)
+- ✅ **WordPress Ready**: Auto-styling for WordPress content via .prose
+- ✅ **Design Freedom**: Semantic classes independent of HTML tags
+- ✅ **Complete Foundation**: Everything from VARIABLES-V3-Daniels (1,760+ lines)
+- ✅ **Semantic Naming**: .title, .subtitle vs generic .h1, .h2
+- ✅ **GenerateBlocks Compatible**: Matches their architecture perfectly
 
 ### **UPDATED IMPLEMENTATION PLAN:**
 
 #### **Phase 0: GStyles Migration** (2-3 hours)
-- [ ] Create `src/gstyles/` folder with comprehensive CSS variables
+- [ ] Create `src/gstyles/gstyles.css` from VARIABLES-V3-Daniels base
+- [ ] Keep Daniel's PROSE system (.prose h1, .prose h2, etc.) - unchanged
+- [ ] Replace generic component classes (.h1, .h2) with semantic text types (.title, .subtitle)
+- [ ] Add missing semantic text types (.pretitle, .eyebrow, .caption, .label, .meta)
 - [ ] Remove `src/theme/theme.js` and `tokens.js` 
 - [ ] Update `ThemeProvider.jsx` to inject CSS from `gstyles.css`
-- [ ] Migrate React components to use GStyles classes
+- [ ] Migrate React components to use semantic text types
 - [ ] Maintain Shadow DOM isolation
 
 #### **Phase 1-3: Continue as originally planned** but with superior foundation
 
 ### **Key Architecture Updates:**
-- 🔄 **Text Types**: `.title`, `.subtitle` etc. instead of h1, h2 styling
+- 🔄 **Dual Typography System**: PROSE (content) + Semantic Components (design)
+- 🔄 **Semantic Text Types**: `.title`, `.subtitle`, `.pretitle` vs generic `.h1`, `.h2`
 - 🔄 **Single CSS File**: gstyles.css replaces theme.js + tokens.js
-- 🔄 **VARIABLES-V3-Daniels**: Professional design system base
+- 🔄 **VARIABLES-V3-Daniels Base**: Professional 1,760+ line design system
 - ✅ **Keep**: Shadow DOM isolation, brand-colors.json, PHP filter strategy
+- ✅ **WordPress Ready**: .prose system for automatic content styling
 
 **Current Status**: About to commit current state, then implement GStyles migration
 
