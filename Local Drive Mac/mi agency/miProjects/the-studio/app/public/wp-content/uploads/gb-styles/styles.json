@@ -1,0 +1,9 @@
+[
+    {
+        "file": "main.css",
+        "order": 0,
+        "content": "/* Variables */\n:root {\n    --example: value;\n}",
+        "active": true,
+        "last_modified": "2025-06-24 20:07:50"
+    }
+]
