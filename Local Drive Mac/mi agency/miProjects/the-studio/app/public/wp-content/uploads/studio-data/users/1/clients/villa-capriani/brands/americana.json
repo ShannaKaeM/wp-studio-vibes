@@ -1,0 +1,118 @@
+{
+    "id": "americana",
+    "name": "Americana",
+    "slug": "americana",
+    "client_id": "villa-capriani",
+    "colors": {
+        "red": {
+            "id": "red",
+            "name": "Red",
+            "hex": "#ee3a3a",
+            "hsl": {
+                "h": 0,
+                "s": 84,
+                "l": 58
+            },
+            "oklch": {
+                "l": 0.57999999999999996,
+                "c": 0.31079999999999997,
+                "h": 0
+            },
+            "cmyk": {
+                "c": 0,
+                "m": 76,
+                "y": 76,
+                "k": 7
+            },
+            "order": 0,
+            "created_at": "2025-06-27 20:07:33",
+            "updated_at": "2025-06-27 20:07:33"
+        },
+        "blue": {
+            "id": "blue",
+            "name": "Blue",
+            "hex": "#1f3f9e",
+            "hsl": {
+                "h": 225,
+                "s": 67,
+                "l": 37
+            },
+            "oklch": {
+                "l": 0.37,
+                "c": 0.24790000000000001,
+                "h": 225
+            },
+            "cmyk": {
+                "c": 80,
+                "m": 60,
+                "y": 0,
+                "k": 38
+            },
+            "order": 1,
+            "created_at": "2025-06-27 20:07:45",
+            "updated_at": "2025-06-27 20:07:45"
+        },
+        "white": {
+            "id": "white",
+            "name": "White",
+            "hex": "#ffffff",
+            "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 100
+            },
+            "oklch": {
+                "l": 1,
+                "c": 0,
+                "h": 0
+            },
+            "cmyk": {
+                "c": 0,
+                "m": 0,
+                "y": 0,
+                "k": 0
+            },
+            "order": 2,
+            "created_at": "2025-06-27 20:07:54",
+            "updated_at": "2025-06-27 20:07:54"
+        },
+        "grayscale": {
+            "id": "grayscale",
+            "name": "Grayscale",
+            "hex": "#878787",
+            "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 53
+            },
+            "oklch": {
+                "l": 0.53000000000000003,
+                "c": 0,
+                "h": 0
+            },
+            "cmyk": {
+                "c": 0,
+                "m": 0,
+                "y": 0,
+                "k": 47
+            },
+            "order": 3,
+            "created_at": "2025-06-27 20:08:21",
+            "updated_at": "2025-06-27 20:08:21"
+        }
+    },
+    "created_at": "2025-06-27 20:07:25",
+    "updated_at": "2025-06-27 20:15:14",
+    "theme_mappings": {
+        "default": {
+            "name": "4th of July",
+            "mappings": {
+                "primary": "red",
+                "secondary": "white",
+                "accent": "blue",
+                "neutral": "grayscale",
+                "base": "grayscale"
+            }
+        }
+    }
+}

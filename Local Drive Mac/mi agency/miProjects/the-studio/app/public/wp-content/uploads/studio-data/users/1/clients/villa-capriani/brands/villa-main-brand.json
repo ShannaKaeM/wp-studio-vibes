@@ -1,10 +1,10 @@
 {
     "id": "villa-main-brand",
-    "name": "Villa-Main Brand",
+    "name": "Brand Color",
     "slug": "villa-main-brand",
     "client_id": "villa-capriani",
-    "colors": {
-        "aqua": {
+    "colors": [
+        {
             "id": "aqua",
             "name": "Aqua",
             "hex": "#5a7f80",
@@ -28,7 +28,7 @@
             "created_at": "2025-06-27 03:28:08",
             "updated_at": "2025-06-27 03:28:08"
         },
-        "terracotta": {
+        {
             "id": "terracotta",
             "name": "Terracotta",
             "hex": "#a56f51",
@@ -52,7 +52,7 @@
             "created_at": "2025-06-27 03:28:29",
             "updated_at": "2025-06-27 03:28:29"
         },
-        "sand": {
+        {
             "id": "sand",
             "name": "Sand",
             "hex": "#ac9e8b",
@@ -76,7 +76,7 @@
             "created_at": "2025-06-27 03:28:45",
             "updated_at": "2025-06-27 03:28:45"
         },
-        "grayscale": {
+        {
             "id": "grayscale",
             "name": "Grayscale",
             "hex": "#878787",
@@ -100,9 +100,9 @@
             "created_at": "2025-06-27 03:29:00",
             "updated_at": "2025-06-27 03:29:00"
         }
-    },
+    ],
     "created_at": "2025-06-27 03:27:46",
-    "updated_at": "2025-06-27 04:06:47",
+    "updated_at": "2025-06-27 20:13:33",
     "theme_mappings": {
         "default": {
             "name": "Villa Theme",

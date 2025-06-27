@@ -102,14 +102,14 @@
         }
     },
     "created_at": "2025-06-27 03:23:21",
-    "updated_at": "2025-06-27 04:06:17",
+    "updated_at": "2025-06-27 14:23:28",
     "theme_mappings": {
         "default": {
             "name": "MG Theme",
             "mappings": {
                 "primary": "green",
                 "secondary": "black",
-                "accent": "white",
+                "accent": "green",
                 "neutral": "grayscale",
                 "base": "grayscale"
             }
