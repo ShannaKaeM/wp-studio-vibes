@@ -1,0 +1,118 @@
+{
+    "id": "villa-main-brand",
+    "name": "Villa-Main Brand",
+    "slug": "villa-main-brand",
+    "client_id": "villa-capriani",
+    "colors": {
+        "aqua": {
+            "id": "aqua",
+            "name": "Aqua",
+            "hex": "#5a7f80",
+            "hsl": {
+                "h": 182,
+                "s": 17,
+                "l": 43
+            },
+            "oklch": {
+                "l": 0.42999999999999999,
+                "c": 0.062899999999999998,
+                "h": 182
+            },
+            "cmyk": {
+                "c": 30,
+                "m": 1,
+                "y": 0,
+                "k": 50
+            },
+            "order": 0,
+            "created_at": "2025-06-27 03:28:08",
+            "updated_at": "2025-06-27 03:28:08"
+        },
+        "terracotta": {
+            "id": "terracotta",
+            "name": "Terracotta",
+            "hex": "#a56f51",
+            "hsl": {
+                "h": 21,
+                "s": 34,
+                "l": 48
+            },
+            "oklch": {
+                "l": 0.47999999999999998,
+                "c": 0.1258,
+                "h": 21
+            },
+            "cmyk": {
+                "c": 0,
+                "m": 33,
+                "y": 51,
+                "k": 35
+            },
+            "order": 1,
+            "created_at": "2025-06-27 03:28:29",
+            "updated_at": "2025-06-27 03:28:29"
+        },
+        "sand": {
+            "id": "sand",
+            "name": "Sand",
+            "hex": "#ac9e8b",
+            "hsl": {
+                "h": 35,
+                "s": 17,
+                "l": 61
+            },
+            "oklch": {
+                "l": 0.60999999999999999,
+                "c": 0.062899999999999998,
+                "h": 35
+            },
+            "cmyk": {
+                "c": 0,
+                "m": 8,
+                "y": 19,
+                "k": 33
+            },
+            "order": 2,
+            "created_at": "2025-06-27 03:28:45",
+            "updated_at": "2025-06-27 03:28:45"
+        },
+        "grayscale": {
+            "id": "grayscale",
+            "name": "Grayscale",
+            "hex": "#878787",
+            "hsl": {
+                "h": 0,
+                "s": 0,
+                "l": 53
+            },
+            "oklch": {
+                "l": 0.53000000000000003,
+                "c": 0,
+                "h": 0
+            },
+            "cmyk": {
+                "c": 0,
+                "m": 0,
+                "y": 0,
+                "k": 47
+            },
+            "order": 3,
+            "created_at": "2025-06-27 03:29:00",
+            "updated_at": "2025-06-27 03:29:00"
+        }
+    },
+    "created_at": "2025-06-27 03:27:46",
+    "updated_at": "2025-06-27 04:06:47",
+    "theme_mappings": {
+        "default": {
+            "name": "Villa Theme",
+            "mappings": {
+                "primary": "aqua",
+                "secondary": "terracotta",
+                "accent": "sand",
+                "neutral": "grayscale",
+                "base": "grayscale"
+            }
+        }
+    }
+}
