@@ -571,41 +571,6 @@ presetCapabilities: {
 
 ## 🎯 **LATEST SESSION UPDATE** (June 27, 2025)
 
-### **✅ NEW ARCHITECTURE VISION DEFINED**
-
-#### **Major Architectural Decisions:**
-
-1. **5 Main Pages Structure**:
-   - Colors, Typography, Layouts, Effects, **Scopes** (new critical page)
-   - Each page has sub-navigation tabs
-   - Consolidated from 7+ scattered pages
-
-2. **Revolutionary Base Value + Calculation System**:
-   - Define only base values: `--base-font-size: 1rem`, `--type-scale: 1.25`
-   - Calculate everything else: `calc(var(--base-font-size) * var(--type-scale))`
-   - Dramatically simplifies theme output (~20 variables vs 200+)
-   - Aligns perfectly with Daniel's variable pattern approach
-
-3. **Multiple Input Format Support**:
-   - Direct values: "3rem", "48px", "2.5em"
-   - Semantic names: "sm", "md", "lg", "hero"
-   - Percentages: "125%", "150%"
-   - Multipliers: "1.5x", "2x"
-   - All convert to base multipliers internally
-
-4. **Scopes Architecture as Main Feature**:
-   - Dedicated Scopes page in main navigation
-   - Layout scopes: .card, .hero, .sidebar, .modal, .form
-   - Helper scopes: .holiday, .luxury, .minimal, .playful
-   - Visual editor for scope modifications
-
-5. **Color Preset System Implemented**:
-   - OKLCH-based scale generation (50-950 shades)
-   - State variations (hover, active, disabled, focus)
-   - Opacity variations (5% - 95%)
-   - Export in Daniel's CSS variable format
-   - Auto-save to JSON storage
-
 ### **✅ MAJOR MILESTONE: JSON File Storage System Complete**
 
 #### **Storage System Refactor:**
@@ -676,12 +641,6 @@ Successfully cleaned up the entire codebase:
 - Fixed mixed database/file storage calls
 - Removed old global theme-mappings.json
 - Fixed syntax errors from removed console.log objects
-
-### **📝 Terminology Updates:**
-- "Brand" → "Color Set" (more universal, allows for Style 1, Holiday, etc.)
-- "Compositions" → "Layouts" (clearer naming)
-- Sub-navigation structure for each main page
-- Phase 2 placeholder: "WP Studio Vibes"
 
 ### **📊 Current Working Features:**
 - ✅ Multi-client support with separate workspaces

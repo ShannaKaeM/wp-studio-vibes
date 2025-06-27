@@ -54,7 +54,7 @@ Lines: 366-391 (addServerDataToPage method)
 // 1. Added to class-studio-compiler.php
 public function export_to_theme_json($user_id, $preset_name = 'default')
 // Exports semantic tokens, client/brand colors, and base variables to theme.json v2 format
-
+A
 // 2. Added to shadow-plugin.php
 add_filter('wp_theme_json_data_theme', [$this, 'filterThemeJson'], 10, 1);
 // Merges Studio design tokens with active theme's theme.json
