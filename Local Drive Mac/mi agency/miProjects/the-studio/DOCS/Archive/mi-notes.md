@@ -40,11 +40,7 @@ Based on the conversation, here are
   image
   2. Use the boilerplate, remove
   default app
-  3. Setup React Router for all views
-  4. Create modular file structure
-  5. Run /init after major changes
-  (updates project memory in
-  claude.md)
+  o
 
   Styling Philosophy
 

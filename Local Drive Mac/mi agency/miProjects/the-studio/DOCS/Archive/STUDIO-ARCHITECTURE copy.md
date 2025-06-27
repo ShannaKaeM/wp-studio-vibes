@@ -476,7 +476,7 @@ register_block_pattern('studio/hero-primary', [
 
 3. **Component Development**
    - Build reusable components using generic approach
-   - Apply glassmorphism effects from Raycast analysis
+   - Apply glassmorphism effects from Raycasti  analysis
    - Test color presets system with apple green/blue
    - Create component library foundation
 
