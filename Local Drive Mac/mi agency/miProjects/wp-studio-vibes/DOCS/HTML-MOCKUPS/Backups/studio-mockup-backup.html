@@ -48,104 +48,87 @@
             --studio-secondary-800: #3f6212;
             --studio-secondary-900: #365314;
             
-            /* Typography - Semantic Text System */
+            /* Typography */
             --studio-font-family: 'Montserrat', system-ui, sans-serif;
-            
-            /* Typography Sizes (Usage: 14 components) */
-            --studio-text-metadata: 0.75rem;        /* 12px - nav section titles, timestamps */
-            --studio-text-interface: 0.875rem;      /* 14px - nav items, buttons, format tabs, form labels (14 uses) */
-            --studio-text-body: 1rem;               /* 16px - main body text, default size */
-            --studio-text-description: 1.0625rem;   /* 17px - section descriptions, help text */
-            --studio-text-card-title: 1.125rem;     /* 18px - color card names, component headers (3 uses) */
-            --studio-text-section-title: 1.25rem;   /* 20px - section titles in main content */
-            --studio-text-icon: 1.5rem;             /* 24px - icon font sizes in navigation */
-            --studio-text-page-title: 1.875rem;     /* 30px - main page title with gradient */
-            --studio-text-accent-icon: 2rem;        /* 32px - large accent icons */
+            --studio-text-xs: 0.75rem;
+            --studio-text-sm: 0.875rem;
+            --studio-text-base: 1rem;
+            --studio-text-lg: 1.125rem;
+            --studio-text-xl: 1.25rem;
+            --studio-text-2xl: 1.5rem;
+            --studio-text-3xl: 2rem;
 
-            /* Border Radius (Usage: 16 components) */
-            --studio-radius-sm: 0.375rem;    /* Small elements: nav items, color dots, format tabs (4 uses) */
-            --studio-radius: 0.5rem;         /* Standard controls: forms, buttons, sliders (6 uses) */
-            --studio-radius-md: 0.625rem;    /* Medium elements: global close button (1 use) */
-            --studio-radius-lg: 0.75rem;     /* Important controls: control icons, color swatches (3 uses) */
-            --studio-radius-xl: 1rem;        /* Major containers: color cards, section headers (2 uses) */
+            /* Border Radius */
+            --studio-radius-sm: 0.375rem;
+            --studio-radius: 0.5rem;
+            --studio-radius-lg: 0.75rem;
+            --studio-radius-xl: 1rem;
 
-            /* Border Thickness - Semantic System */
-            --studio-border-thin: 1px;      /* Forms, buttons, small UI elements */
-            --studio-border-medium: 2px;    /* Controls, toggles, interactive elements */
-            --studio-border-thick: 3px;     /* Cards, primary content elements */
-
-            /* Spacing Scale (Usage: 62 total applications) */
-            --studio-space-1: 0.25rem;     /* Micro spacing: nav item margins, fine adjustments (6 uses) */
-            --studio-space-2: 0.5rem;      /* Tight spacing: button padding, control gaps (13 uses) */
-            --studio-space-3: 0.75rem;     /* Element spacing: between related items, form padding (18 uses) */
-            --studio-space-4: 1rem;        /* Container spacing: card padding, form elements (11 uses) */
-            --studio-space-5: 2rem;        /* Section spacing: sidebar padding, major gaps (9 uses) */
-            --studio-space-6: 3rem;        /* Content spacing: between sections, major margins (9 uses) */
-            --studio-space-8: 4rem;        /* Large spacing: content areas, major separations (2 uses) */
-            --studio-space-10: 5rem;       /* Extra large spacing: special layouts (1 use) */
-            --studio-space-12: 6rem;       /* Maximum spacing: largest separations (1 use) */
+            /* Spacing Scale */
+            --studio-space-1: 0.25rem;
+            --studio-space-2: 0.5rem;
+            --studio-space-3: 0.75rem;
+            --studio-space-4: 1rem;
+            --studio-space-5: 2rem;
+            --studio-space-6: 3rem;
+            --studio-space-8: 4rem;
+            --studio-space-10: 5rem;
+            --studio-space-12: 6rem;
         }
 
-        /* Light Mode Theme Colors */
+        /* Light Mode */
         :root, [data-theme="light"] {
-            /* Background Colors (Usage: 15 components) */
-            --studio-bg-main: var(--studio-base-50);           /* Page background (1 use) */
-            --studio-bg-header: var(--studio-base-200);        /* Top header background (1 use) */
-            --studio-bg-section-header: var(--studio-base-200); /* Section headers (1 use) */
-            --studio-bg-sidebar: var(--studio-base-100);       /* Left sidebar background (3 uses) */
-            --studio-bg-sidebar-header: var(--studio-base-300); /* Sidebar header (2 uses) */
-            --studio-bg-card: var(--studio-base-200);          /* Color cards, overlays (7 uses) */
-            --studio-bg-controls: var(--studio-base-100);      /* Control backgrounds (1 use) */
-            --studio-bg-input: var(--studio-base-200);         /* Form inputs, selects (3 uses) */
-            --studio-bg-button: var(--studio-base-300);        /* Button backgrounds (1 use) */
+            --studio-bg-main: var(--studio-base-50);           /* Dark: 950 → Light: 50 */
+            --studio-bg-header: var(--studio-base-300);        /* Dark: 700 → Light: 300 */
+            --studio-bg-section-header: var(--studio-base-200); /* Dark: 800 → Light: 200 */
+            --studio-bg-sidebar: var(--studio-base-100);       /* Dark: 900 → Light: 100 */
+            --studio-bg-sidebar-header: var(--studio-base-200); /* Dark: 800 → Light: 200 */
+            --studio-bg-card: var(--studio-base-200);          /* Dark: 800 → Light: 200 */
+            --studio-bg-card-swatch: var(--studio-base-300);   /* Dark: 700 → Light: 300 */
+            --studio-bg-controls: var(--studio-base-100);      /* Dark: 900 → Light: 100 */
+            --studio-bg-input: var(--studio-base-200);         /* Dark: 800 → Light: 200 */
+            --studio-bg-button: var(--studio-base-300);        /* Dark: 700 → Light: 300 */
             
-            /* Text Colors - Semantic System (Usage: 50+ components) */
-            --studio-text-content: var(--studio-base-950);     /* Main content, card titles (8 uses) */
-            --studio-text-supporting: var(--studio-base-700);  /* Descriptions, labels (6 uses) */
-            --studio-text-subtle: var(--studio-base-600);      /* Metadata, secondary info (11 uses) */
-            --studio-text-navigation: var(--studio-base-900);  /* Navigation items (3 uses) */
-            --studio-text-heading: var(--studio-base-900);     /* Section titles, headings (1 use) */
-            --studio-text-emphasis: var(--studio-base-950);    /* Active states, emphasis (3 uses) */
+            --studio-text-primary: var(--studio-base-950);     /* Dark: 50 → Light: 950 */
+            --studio-text-secondary: var(--studio-base-700);    /* Dark: 300 → Light: 700 */
+            --studio-text-muted: var(--studio-base-600);        /* Dark: 400 → Light: 600 */
+            --studio-text-header: var(--studio-base-900);       /* Dark: 100 → Light: 900 */
+            --studio-text-section-header-title: var(--studio-base-900); /* Dark: 100 → Light: 900 */
+            --studio-text-header-active: var(--studio-base-950); /* Dark: 50 → Light: 950 */
             
-            /* Border Colors - Semantic System (Usage: 14 components) */
-            --studio-border-ui: var(--studio-base-300);         /* General UI: forms, inputs, close buttons (5 uses) */
-            --studio-border-interactive: var(--studio-base-400); /* Interactive: toggles, control icons (3 uses) */
-            --studio-border-primary: var(--studio-base-300);    /* Primary content: cards, sections (3 uses) */
-            --studio-border-accent: var(--studio-base-700);     /* Accent elements: color dots, slider handles (2 uses) */
-            --studio-border-ghost: var(--studio-base-400);      /* Ghost widgets: add buttons, placeholders (2 uses) */
-            --studio-border-ghost-hover: var(--studio-base-500); /* Ghost hover states (0 direct uses) */
+            --studio-border-subtle: var(--studio-base-300);     /* Dark: 500 → Light: 500 (stays same) */
+            --studio-border-medium: var(--studio-base-300);     /* Dark: 700 → Light: 300 */
+            --studio-border-card: var(--studio-base-300);       /* Dark: 700 → Light: 300 */
         }
 
         /* Light Mode Specific Overrides */
+        :root .studio-top-bar, [data-theme="light"] .studio-top-bar {
+            border-bottom: .5px solid var(--studio-border-subtle);
+        }
 
-        /* Dark Mode Theme Colors */
+        /* Dark Mode */
         [data-theme="dark"] {
-            /* Background Colors (Dark Mode - Higher Contrast) */
-            --studio-bg-main: var(--studio-base-950);           /* Dark page background */
-            --studio-bg-header: var(--studio-base-800);         /* Dark header background */
-            --studio-bg-section-header: var(--studio-base-800); /* Dark section headers */
-            --studio-bg-sidebar: var(--studio-base-900);        /* Dark sidebar background */
-            --studio-bg-sidebar-header: var(--studio-base-700); /* Dark sidebar header */
-            --studio-bg-card: var(--studio-base-800);           /* Dark card backgrounds */
-            --studio-bg-controls: var(--studio-base-900);       /* Dark control backgrounds */
-            --studio-bg-input: var(--studio-base-800);          /* Dark form inputs */
-            --studio-bg-button: var(--studio-base-700);         /* Dark button backgrounds */
+            --studio-bg-main: var(--studio-base-950);
+            --studio-bg-header: var(--studio-base-700);
+            --studio-bg-section-header: var(--studio-base-800);
+            --studio-bg-sidebar: var(--studio-base-900);
+            --studio-bg-sidebar-header: var(--studio-base-800);
+            --studio-bg-card: var(--studio-base-800);
+            --studio-bg-card-swatch: var(--studio-base-700);
+            --studio-bg-controls: var(--studio-base-900);
+            --studio-bg-input: var(--studio-base-800);
+            --studio-bg-button: var(--studio-base-700);
             
-            /* Text Colors - Semantic System (Dark Mode - Light Text) */
-            --studio-text-content: var(--studio-base-50);       /* Light main content text */
-            --studio-text-supporting: var(--studio-base-300);   /* Light supporting text */
-            --studio-text-subtle: var(--studio-base-400);       /* Medium subtle text */
-            --studio-text-navigation: var(--studio-base-100);   /* Light navigation text */
-            --studio-text-emphasis: var(--studio-base-50);      /* Bright emphasis text */
-            --studio-text-heading: var(--studio-base-100);      /* Light heading text */
+            --studio-text-primary: var(--studio-base-50);
+            --studio-text-secondary: var(--studio-base-300);
+            --studio-text-muted: var(--studio-base-400);
+            --studio-text-header: var(--studio-base-100);
+            --studio-text-header-active: var(--studio-base-50);
+            --studio-text-section-header-title: var(--studio-base-100);
             
-            /* Border Colors - Semantic System (Dark Mode - Higher Contrast) */
-            --studio-border-ui: var(--studio-base-500);         /* Medium UI borders */
-            --studio-border-interactive: var(--studio-base-600); /* Darker interactive borders */
-            --studio-border-primary: var(--studio-base-700);    /* Dark primary borders */
-            --studio-border-accent: var(--studio-base-50);      /* Bright accent borders */
-            --studio-border-ghost: var(--studio-base-600);      /* Dark ghost borders */
-            --studio-border-ghost-hover: var(--studio-base-500); /* Lighter ghost hover */
+            --studio-border-subtle: var(--studio-base-500);
+            --studio-border-medium: var(--studio-base-700);
+            --studio-border-card: var(--studio-base-700);
         }
 
         /* ================================== */
@@ -161,7 +144,7 @@
         body {
             font-family: var(--studio-font-family);
             background: var(--studio-bg-main);
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
             height: 100vh;
             overflow: hidden;
         }
@@ -171,72 +154,53 @@
             flex-direction: column;
             height: 100vh;
         }
- 
+        /* ================================== */
+        /* TOP BAR                            */
+        /* ================================== */ 
 
-
+        .studio-top-bar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: var(--studio-space-2) var(--studio-space-3);
+            background: var(--studio-bg-sidebar-header);
+            border-bottom: .5px solid var(--studio-border-subtle);
+            height: auto;
+            z-index: 100;
+            gap: var(--studio-space-2);
+        }
 
         .studio-control-icon {
-            width: 32px;
-            height: 32px;
-            border: var(--studio-border-medium) solid var(--studio-border-interactive);
-            background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
-            color: white;
+            width: 28px;
+            height: 28px;
+            border: none;
+            background: transparent;
+            color: var(--studio-text-muted);
             cursor: pointer;
-            border-radius: var(--studio-radius-lg);
+            border-radius: var(--studio-radius-sm);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 18px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            transition: all 0.2s ease;
+            opacity: 0.7;
         }
 
         .studio-control-icon:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-            border-color: var(--studio-primary-400);
-        }
-
-        .studio-global-close {
-            position: fixed;
-            top: 16px;
-            right: 16px;
-            width: 32px;
-            height: 32px;
-            border: var(--studio-border-thin) solid var(--studio-border-ui);
-            font-size: 18px;
-            font-weight: 400;
             background: var(--studio-bg-card);
-            color: var(--studio-text-subtle);
-            cursor: pointer;
-            border-radius: var(--studio-radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s ease;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .studio-global-close:hover {
-            background: var(--studio-bg-card);
-            color: var(--studio-text-content);
-            border-color: var(--studio-border-interactive);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            color: var(--studio-text-primary);
+            opacity: 1;
         }
 
         .studio-theme-toggle {
             position: relative;
             width: 48px;
-            height: 24px;
-            border: var(--studio-border-medium) solid var(--studio-border-interactive);
-            border-radius: 14px;
+            height: 20px;
+            border: 1px solid var(--studio-border-subtle);
+            border-radius: 12px;
             background: var(--studio-bg-sidebar);
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .studio-theme-toggle::before {
@@ -246,9 +210,9 @@
             left: 2px;
             width: 18px;
             height: 18px;
-            background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
             border-radius: 50%;
-            transition: transform 0.3s ease;
+            background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
+            transition: all 0.3s ease;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
@@ -272,7 +236,7 @@
 
         .studio-sidebar {
             background: var(--studio-bg-sidebar);
-            border-right: 1px solid var(--studio-border-ui);
+            border-right: 1px solid var(--studio-border-subtle);
             display: flex;
             flex-direction: column;
         }
@@ -289,78 +253,13 @@
         }
 
         .studio-page-title {
-            font-size: var(--studio-text-page-title);
+            font-size: 1.875rem;
             font-weight: 600;
             background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin: 0;
-            text-align: center;
-            width: 100%;
-        }
-
-        .studio-brand {
-            display: flex;
-            align-items: center;
-            gap: var(--studio-space-3);
-        }
-
-        .studio-logo {
-            width: 40px;
-            height: 40px;
-            flex-shrink: 0;
-        }
-
-        .studio-title {
-            font-size: var(--studio-text-card-title);
-            font-weight: 600;
-            color: var(--studio-text-navigation);
-            margin: 0;
-        }
-
-        .studio-page-brand {
-            display: flex;
-            align-items: center;
-            gap: var(--studio-space-3);
-        }
-
-        .studio-controls {
-            display: flex;
-            align-items: center;
-            gap: var(--studio-space-2);
-            padding: var(--studio-space-5);
-        }
-
-        .studio-page-icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            flex-shrink: 0;
-        }
-
-        .studio-main-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0;
-            line-height: 1.1;
-        }
-
-        .studio-sub-title {
-            font-size: var(--studio-text-interface);
-            font-weight: 400;
-            color: var(--studio-text-subtle);
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            line-height: 1.2;
         }
 
 
@@ -377,9 +276,9 @@
         }
 
         .studio-nav-title {
-            font-size: var(--studio-text-metadata);
+            font-size: var(--studio-text-xs);
             font-weight: 600;
-            color: var(--studio-text-subtle);
+            color: var(--studio-text-muted);
             margin-bottom: var(--studio-space-3);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -389,30 +288,30 @@
             display: flex;
             align-items: center;
             padding: var(--studio-space-2) var(--studio-space-3);
-            color: var(--studio-text-supporting);
+            color: var(--studio-text-secondary);
             text-decoration: none;
             border-radius: var(--studio-radius-sm);
             margin-bottom: var(--studio-space-1);
             transition: all 0.2s ease;
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
             gap: var(--studio-space-2);
         }
 
         .studio-nav-item:hover {
             background: var(--studio-bg-card);
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
         }
 
         .studio-nav-item.active {
             background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
-            color: var(--studio-text-emphasis);
+            color: var(--studio-text-header-active);
             font-weight: 500;
         }
 
         .studio-nav-icon {
             width: 16px;
             height: 16px;
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
         }
 
         /* ================================== */
@@ -428,7 +327,7 @@
         /* Main Header - Top Bar */
         .studio-top-header {
             padding: var(--studio-space-4) var(--studio-space-8);
-            border-bottom: 1px solid var(--studio-border-ui);
+            border-bottom: 1px solid var(--studio-border-subtle);
             background: var(--studio-bg-header);
             display: flex;
             align-items: center;
@@ -445,10 +344,10 @@
 
         .studio-sub-nav-item {
             padding: var(--studio-space-2) var(--studio-space-4);
-            color: var(--studio-text-navigation);
+            color: var(--studio-text-header);
             text-decoration: none;
             font-weight: 500;
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
             border-radius: var(--studio-radius);
             transition: all 0.2s ease;
             border: 1px solid transparent;
@@ -475,31 +374,25 @@
         }
 
         .studio-section-container {
-            background: var(--studio-bg-card);
+            background: var(--studio-bg-section-header);
             border-radius: var(--studio-radius-xl);
-            padding: 0;  /* Remove padding here, add to individual columns */
+            padding: var(--studio-space-5);
             display: grid;
-            grid-template-columns: auto 1fr;  /* Title stack, description */
-            gap: 0;  /* Remove gap, handle spacing with padding */
+            grid-template-columns: auto 1fr;
+            gap: var(--studio-space-6);
             align-items: center;
-            border: var(--studio-border-thick) solid var(--studio-border-primary);
-            overflow: hidden;  /* Ensure border radius is respected */
-            font-family: 'Montserrat', sans-serif;
+            border: 3px solid var(--studio-border-subtle);
         }
 
-        .studio-section-title-stack {
+        .studio-section-title-group {
             display: flex;
-            flex-direction: column;
-            gap: var(--studio-space-1);
-            padding: var(--studio-space-5);  /* Equal padding on all sides */
-            width: 100%;
-            min-height: 100%;  /* Ensure full height */
-            justify-content: center;
+            align-items: center;
+            gap: var(--studio-space-3);
         }
 
         .studio-section-icon {
-            width: 48px;  /* Increased to match larger title */
-            height: 48px; /* Increased to match larger title */
+            width: 40px;
+            height: 40px;
             background: linear-gradient(135deg, 
                 var(--studio-primary-500) 0%, 
                 var(--studio-secondary-500) 100%);
@@ -507,31 +400,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: var(--studio-text-icon);  /* Icon font size */
+            font-size: 1.25rem;
             flex-shrink: 0;
         }
 
-        .studio-section-header .studio-section-title {
-            font-size: var(--studio-text-section-title) !important;  /* Use !important to override sidebar styling */
+        .studio-section-title {
+            font-size: calc(var(--studio-text-xl) * 1.5);
+            display: flex;
+            align-items: center;
             font-weight: 600;
-            color: var(--studio-text-heading) !important;   
+            color: var(--studio-text-header);
             letter-spacing: 0.5px;
-            margin: 0 !important;
+            margin: 0;
             white-space: nowrap;
-            text-transform: none !important;  /* Override uppercase from sidebar */
-            line-height: 1.2;  /* Ensure proper line height for alignment */
         }
 
         .studio-section-description {
-            color: var(--studio-text-supporting);
+            color: var(--studio-text-secondary);
             line-height: 1.5;
-            font-size: var(--studio-text-description);
+            font-size: var(--studio-text-md);
             margin: 0;
-            padding: var(--studio-space-5);  /* Equal padding on all sides to match title group */
+            padding-left: var(--studio-space-4);
+            padding-right: var(--studio-space-4);
             position: relative;
             width: 100%;
-            display: flex;
-            align-items: center;  /* Center content vertically */
         }
 
         .studio-section-description::before {
@@ -588,7 +480,7 @@
 
         .studio-color-card {
             background: var(--studio-bg-card);
-            border: var(--studio-border-thick) solid var(--studio-border-primary);
+            border: 2px solid var(--studio-border-card);
             border-radius: var(--studio-radius-xl);
             overflow: hidden;
             min-height: 400px;
@@ -596,8 +488,6 @@
             flex-direction: column;
             position: relative;
             transition: all 0.2s ease;
-            padding: var(--studio-space-5);
-            font-family: 'Montserrat', sans-serif;
         }
 
         .studio-color-card:hover {
@@ -608,20 +498,20 @@
         .studio-color-swatch {
             height: 140px;
             position: relative;
-            border-radius: var(--studio-radius-lg);
-            margin-bottom: var(--studio-space-4);
+            border-radius: var(--studio-radius-lg) var(--studio-radius-lg) 0 0;
         }
 
         .studio-color-info {
+            padding: var(--studio-space-5);
             flex: 1;
             display: flex;
             flex-direction: column;
         }
 
         .studio-color-name {
-            font-size: var(--studio-text-card-title);
+            font-size: var(--studio-text-lg);
             font-weight: 600;
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
             margin-bottom: var(--studio-space-3);
         }
 
@@ -636,14 +526,14 @@
             width: 20px;
             height: 20px;
             border-radius: var(--studio-radius-sm);
-            border: var(--studio-border-thick) solid var(--studio-border-accent);
+            border: 1px solid var(--studio-border-subtle);
             flex-shrink: 0;
         }
 
         .studio-color-value {
             font-family: 'Monaco', 'Menlo', monospace;
-            color: var(--studio-text-supporting);
-            font-size: var(--studio-text-interface);
+            color: var(--studio-text-secondary);
+            font-size: var(--studio-text-sm);
             font-weight: 600;
         }
 
@@ -669,8 +559,8 @@
             border: none;
             border-radius: var(--studio-radius-sm);
             background: transparent;
-            color: var(--studio-text-subtle);
-            font-size: var(--studio-text-interface);
+            color: var(--studio-text-muted);
+            font-size: var(--studio-text-sm);
             font-weight: 500;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -679,12 +569,12 @@
         }
 
         .studio-format-tab:hover {
-            color: var(--studio-text-supporting);
+            color: var(--studio-text-secondary);
         }
 
         .studio-format-tab.active {
             background: var(--studio-bg-card);
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
         }
 
         .studio-control-group {
@@ -699,15 +589,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
             font-weight: 500;
-            color: var(--studio-text-supporting);
+            color: var(--studio-text-secondary);
             margin-bottom: var(--studio-space-2);
         }
 
         .studio-control-value {
             font-weight: 600;
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
         }
 
         .studio-slider {
@@ -727,7 +617,7 @@
             border-radius: 50%;
             background: var(--studio-primary-500);
             cursor: pointer;
-            border: var(--studio-border-medium) solid var(--studio-border-accent);
+            border: 2px solid white;
             box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
 
@@ -737,7 +627,7 @@
 
         .studio-right-sidebar {
             background: var(--studio-bg-sidebar);
-            border-left: 1px solid var(--studio-border-ui);
+            border-left: 1px solid var(--studio-border-subtle);
             display: flex;
             flex-direction: column;
         }
@@ -747,26 +637,15 @@
             background: var(--studio-bg-sidebar-header);
             padding: var(--studio-space-4);
             display: flex;
-            align-items: flex-start;
-            justify-content: flex-end;
+            align-items: center;
+            justify-content: center;
             gap: var(--studio-space-3);
             height: 100px;
-            position: relative;
-        }
-        
-        .studio-controls {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            display: flex;
-            align-items: center;
-            gap: var(--studio-space-2);
-            z-index: 10;
         }
         .studio-title {
-            font-size: var(--studio-text-card-title);
+            font-size: var(--studio-text-lg);
             font-weight: 500;
-            color: var(--studio-text-navigation);
+            color: var(--studio-text-header);
             text-transform: uppercase;
         }
 
@@ -777,7 +656,8 @@
         }
 
         .studio-logo { 
-            width: 35px;
+            width: 45px;
+
             height: 35px;
         }
 
@@ -792,9 +672,9 @@
         }
 
         .studio-section-title {
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
             font-weight: 600;
-            color: var(--studio-text-subtle);
+            color: var(--studio-text-muted);
             margin-bottom: var(--studio-space-3);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -806,21 +686,21 @@
 
         .studio-field-label {
             display: block;
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
             font-weight: 500;
-            color: var(--studio-text-supporting);
+            color: var(--studio-text-secondary);
             margin-bottom: var(--studio-space-2);
         }
 
         .studio-input, .studio-select {
             width: 100%;
             padding: var(--studio-space-3);
-            border: var(--studio-border-thin) solid var(--studio-border-ui);
+            border: 1px solid var(--studio-border-subtle);
             border-radius: var(--studio-radius);
             background: var(--studio-bg-input);
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
             font-family: var(--studio-font-family);
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
         }
 
         .studio-input:focus, .studio-select:focus {
@@ -831,12 +711,12 @@
 
         .studio-button {
             padding: var(--studio-space-3) var(--studio-space-4);
-            border: var(--studio-border-thin) solid var(--studio-primary-500);
+            border: 1px solid var(--studio-primary-500);
             border-radius: var(--studio-radius);
             background: var(--studio-primary-500);
             color: white;
             font-family: var(--studio-font-family);
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -852,7 +732,7 @@
 
         .studio-button.secondary {
             background: var(--studio-bg-button);
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
             border-color: var(--studio-border-medium);
         }
 
@@ -882,14 +762,14 @@
 
         .studio-color-item.active {
             background: var(--studio-primary-500);
-            color: var(--studio-text-emphasis);
+            color: var(--studio-text-header-active);
         }
 
         .studio-color-preview {
             width: 20px;
             height: 20px;
             border-radius: var(--studio-radius-sm);
-            border: var(--studio-border-thin) solid var(--studio-border-ui);
+            border: 1px solid var(--studio-border-subtle);
             flex-shrink: 0;
         }
 
@@ -899,19 +779,19 @@
         }
 
         .studio-color-label {
-            font-size: var(--studio-text-interface);
+            font-size: var(--studio-text-sm);
             font-weight: 500;
-            color: var(--studio-text-content);
+            color: var(--studio-text-primary);
             margin-bottom: var(--studio-space-1);
         }
 
         .studio-color-item.active .studio-color-label {
-            color: var(--studio-text-emphasis);
+            color: var(--studio-text-header-active);
         }
 
         .studio-color-info {
-            font-size: var(--studio-text-metadata);
-            color: var(--studio-text-subtle);
+            font-size: var(--studio-text-xs);
+            color: var(--studio-text-muted);
             font-family: 'Monaco', 'Menlo', monospace;
             font-weight: 500;
         }
@@ -923,157 +803,24 @@
         .studio-count {
             text-align: center;
             margin-top: var(--studio-space-4);
-            color: var(--studio-text-subtle);
-            font-size: var(--studio-text-interface);
-        }
-
-        /* Generic Add New Widget - Ghosted Styling */
-        .studio-add-color-card {
-            border: var(--studio-border-medium) dashed var(--studio-border-ghost);
-            background: transparent;
-            opacity: 0.8;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 400px;
-        }
-
-        .studio-add-color-card:hover {
-            opacity: 0.95;
-            border-color: var(--studio-border-ghost-hover);
-        }
-
-        .studio-add-color-swatch {
-            background: transparent !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: var(--studio-border-medium) dashed var(--studio-border-ghost);
-            border-radius: 50%;
-            margin-bottom: var(--studio-space-6);
-            opacity: 0.8;
-            width: 80px;
-            height: 80px;
-            flex-shrink: 0;
-        }
-
-        .studio-add-color-icon {
-            font-size: 2rem;
-            color: var(--studio-text-subtle);
-            font-weight: 300;
-            opacity: 0.7;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .studio-add-color-card:hover .studio-add-color-icon {
-            opacity: 1;
-        }
-
-        .studio-add-color-title {
-            color: var(--studio-text-subtle) !important;
-            font-weight: 500;
-            margin-bottom: var(--studio-space-2);
-            opacity: 0.7;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .studio-add-color-subtitle {
-            font-size: var(--studio-text-interface);
-            color: var(--studio-text-subtle);
-            font-weight: 400;
-            line-height: 1.4;
-            opacity: 0.5;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .studio-add-color-card:hover .studio-add-color-title {
-            opacity: 1;
-        }
-
-        .studio-add-color-card:hover .studio-add-color-subtitle {
-            opacity: 0.8;
-        }
-
-        /* Remove default card styling for add widget */
-        .studio-add-color-card .studio-color-info {
-            padding: 0;
-            align-items: center;
-            text-align: center;
-        }
-        /* ================================== */
-        /* LIGHT MODE OVERRIDES               */
-        /* ================================== */
-        
-
-        
-        body:not([data-theme="dark"]) .studio-add-color-card {
-            opacity: 0.6;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-card:hover {
-            opacity: 0.85;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-swatch {
-            opacity: 0.6;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-icon {
-            opacity: 0.5;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-card:hover .studio-add-color-icon {
-            opacity: 0.9;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-title {
-            opacity: 0.6;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-card:hover .studio-add-color-title {
-            opacity: 0.9;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-subtitle {
-            opacity: 0.4;
-        }
-        
-        body:not([data-theme="dark"]) .studio-add-color-card:hover .studio-add-color-subtitle {
-            opacity: 0.7;
+            color: var(--studio-text-muted);
+            font-size: var(--studio-text-sm);
         }
     </style>
 </head>
 <body data-theme="dark">
-    <!-- Global Close Button -->
-    <button class="studio-global-close" title="Close">×</button>
     <div class="studio-app">
-
+        <!-- Top Control Bar -->
+        <div class="studio-top-bar">
+            <button class="studio-theme-toggle" onclick="toggleTheme()" title="Toggle theme"></button>
+            <button class="studio-control-icon" title="Close">×</button>
+        </div>
+        
         <div class="studio-layout">
         <!-- Left Sidebar -->
         <div class="studio-sidebar">
             <div class="studio-header">
-                <div class="studio-brand">
-                    <svg class="studio-logo" viewBox="0 0 103 104" fill="none">
-                        <rect x="3.5" y="3.49963" width="95.6918" height="96.1796" rx="15.22" stroke="url(#paint0_linear)" stroke-width="7"/>
-                        <path d="M66.2096 37.8214C65.8459 35.156 64.3459 33.0913 61.7096 31.6272C59.0732 30.1444 55.755 29.4029 51.755 29.4029C48.8914 29.4029 46.4141 29.7784 44.3232 30.5292C42.2323 31.2612 40.6073 32.2748 39.4482 33.57C38.3118 34.8463 37.7437 36.301 37.7437 37.9341C37.7437 39.3043 38.13 40.4868 38.9027 41.4816C39.6982 42.4765 40.7323 43.3117 42.005 43.9875C43.3005 44.6444 44.6868 45.1982 46.1641 45.6486C47.6414 46.0804 49.0618 46.437 50.4255 46.7186L57.2437 48.1826C59.4709 48.6331 61.755 49.2432 64.0959 50.0127C66.4368 50.7823 68.6073 51.7959 70.6073 53.0535C72.6073 54.3111 74.2209 55.8691 75.4482 57.7273C76.6982 59.5856 77.3232 61.8099 77.3232 64.4002C77.3232 67.6662 76.3005 70.5662 74.255 73.1002C72.2323 75.6342 69.2891 77.6332 65.4255 79.0973C61.5846 80.5614 56.9368 81.2935 51.4823 81.2935C46.255 81.2935 41.7323 80.6083 37.9141 79.2381C34.0959 77.8679 31.1073 75.9251 28.9482 73.4099C26.7891 70.8759 25.5959 67.8727 25.3687 64.4002H35.9368C36.1414 66.4837 36.9596 68.2199 38.3914 69.6089C39.8459 70.9792 41.6982 72.0022 43.9482 72.6779C46.2209 73.3348 48.7096 73.6633 51.4141 73.6633C54.3914 73.6633 57.0391 73.2785 59.3573 72.5089C61.6982 71.7206 63.5391 70.6319 64.88 69.2429C66.2209 67.8351 66.8914 66.1927 66.8914 64.3157C66.8914 62.6076 66.3005 61.2092 65.1187 60.1205C63.9596 59.0319 62.38 58.1309 60.38 57.4176C58.4027 56.7044 56.1641 56.0756 53.6641 55.5312L45.4141 53.673C39.8232 52.4153 35.3914 50.5665 32.1187 48.1263C28.8687 45.6862 27.2437 42.4577 27.2437 38.4408C27.2437 35.1185 28.3346 32.2185 30.5164 29.7408C32.6982 27.2631 35.6527 25.3392 39.38 23.9689C43.1073 22.5799 47.3118 21.8854 51.9937 21.8854C56.7209 21.8854 60.8914 22.5706 64.505 23.9408C68.1414 25.311 71.005 27.1974 73.0959 29.6C75.1868 31.9839 76.2777 34.7243 76.3687 37.8214H66.2096Z" fill="url(#paint1_linear)"/>
-                        <defs>
-                            <linearGradient id="paint0_linear" x1="1.23267e-06" y1="8.7248" x2="99.6891" y2="102.708" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--studio-primary-500)"/>
-                                <stop offset="1" stop-color="var(--studio-secondary-500)"/>
-                            </linearGradient>
-                            <linearGradient id="paint1_linear" x1="25.3687" y1="26.9091" x2="81.8625" y2="73.7083" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="var(--studio-primary-500)"/>
-                                <stop offset="1" stop-color="var(--studio-secondary-500)"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <div class="studio-title">The Studio</div>
-                </div>
-
+                <h1 class="studio-page-title">Colors</h1>
             </div>
 
             <nav class="studio-nav">
@@ -1110,12 +857,9 @@
                 </div>
             </nav>
 
-            <div style="padding: var(--studio-space-4); margin-top: auto; border-top: 1px solid var(--studio-border-ui);">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="font-size: var(--studio-text-metadata); color: var(--studio-text-subtle);">
-                        Toggle Theme
-                    </div>
-                    <button class="studio-theme-toggle" onclick="toggleTheme()" title="Switch between light and dark mode"></button>
+            <div style="padding: var(--studio-space-4); margin-top: auto; border-top: 1px solid var(--studio-border-subtle);">
+                <div style="font-size: var(--studio-text-xs); color: var(--studio-text-muted);">
+                    Visual Design System Builder
                 </div>
             </div>
         </div>
@@ -1125,7 +869,7 @@
             <!-- Top Header -->
             <div class="studio-top-header">
                 <nav class="studio-sub-nav">
-                    <a href="#" class="studio-sub-nav-item active">Brand Colors</a>
+                    <a href="#" class="studio-sub-nav-item active">Color Sets</a>
                     <a href="#" class="studio-sub-nav-item">Theme Colors</a>
                     <a href="#" class="studio-sub-nav-item">Color Presets</a>
                     <a href="#" class="studio-sub-nav-item">Components <span style="opacity: 0.5;">(Soon)</span></a>
@@ -1135,14 +879,13 @@
             <!-- Section Header -->
             <div class="studio-section-header">
                 <div class="studio-section-container">
-                    <div class="studio-section-title-stack">
-                        <h1 class="studio-main-title">Colors</h1>
-                        <h2 class="studio-sub-title">BRAND COLORS</h2>
+                    <div class="studio-section-title-group">
+                        <div class="studio-section-icon">🎨</div>
+                        <h2 class="studio-section-title">COLOR SETS</h2>
                     </div>
                     <div class="studio-section-description">
                         <p>Click any color card to edit its values across different color spaces. Use <strong class="color-oklch">OKLCH</strong> for perceptually uniform adjustments, <strong class="color-hsla">HSLA</strong> for intuitive color mixing, or <strong class="color-cmyk">CMYK</strong> for print-ready colors.</p>
                     </div>
-
                 </div>
             </div>
 
@@ -1219,14 +962,11 @@
                         </div>
                     </div>
 
-                    <!-- Add New Color Card -->
-                    <div class="studio-color-card studio-add-color-card">
-                        <div class="studio-color-swatch studio-add-color-swatch">
-                            <div class="studio-add-color-icon">+</div>
-                        </div>
+                    <!-- Fourth Empty Card -->
+                    <div class="studio-color-card" style="opacity: 0.6; border: 2px dashed var(--studio-border-medium);">
+                        <div class="studio-color-swatch" style="background: var(--studio-bg-card-swatch); display: flex; align-items: center; justify-content: center; color: var(--studio-text-muted); font-size: 2rem;">+</div>
                         <div class="studio-color-info">
-                            <div class="studio-color-name studio-add-color-title">Add New Color</div>
-                            <div class="studio-add-color-subtitle">Create a new color for this brand</div>
+                            <div class="studio-color-name" style="color: var(--studio-text-muted);">Add Color</div>
                         </div>
                     </div>
                 </div>
@@ -1236,25 +976,50 @@
         <!-- Right Sidebar -->
         <div class="studio-right-sidebar">
             <div class="studio-right-header">
+                <div class="studio-right-brand">
+                    <svg class="studio-logo" viewBox="0 0 103 104" fill="none">
+                        <rect x="3.5" y="3.49963" width="95.6918" height="96.1796" rx="15.22" stroke="url(#paint0_linear)" stroke-width="7"/>
+                        <path d="M66.2096 37.8214C65.8459 35.156 64.3459 33.0913 61.7096 31.6272C59.0732 30.1444 55.755 29.4029 51.755 29.4029C48.8914 29.4029 46.4141 29.7784 44.3232 30.5292C42.2323 31.2612 40.6073 32.2748 39.4482 33.57C38.3118 34.8463 37.7437 36.301 37.7437 37.9341C37.7437 39.3043 38.13 40.4868 38.9027 41.4816C39.6982 42.4765 40.7323 43.3117 42.005 43.9875C43.3005 44.6444 44.6868 45.1982 46.1641 45.6486C47.6414 46.0804 49.0618 46.437 50.4255 46.7186L57.2437 48.1826C59.4709 48.6331 61.755 49.2432 64.0959 50.0127C66.4368 50.7823 68.6073 51.7959 70.6073 53.0535C72.6073 54.3111 74.2209 55.8691 75.4482 57.7273C76.6982 59.5856 77.3232 61.8099 77.3232 64.4002C77.3232 67.6662 76.3005 70.5662 74.255 73.1002C72.2323 75.6342 69.2891 77.6332 65.4255 79.0973C61.5846 80.5614 56.9368 81.2935 51.4823 81.2935C46.255 81.2935 41.7323 80.6083 37.9141 79.2381C34.0959 77.8679 31.1073 75.9251 28.9482 73.4099C26.7891 70.8759 25.5959 67.8727 25.3687 64.4002H35.9368C36.1414 66.4837 36.9596 68.2199 38.3914 69.6089C39.8459 70.9792 41.6982 72.0022 43.9482 72.6779C46.2209 73.3348 48.7096 73.6633 51.4141 73.6633C54.3914 73.6633 57.0391 73.2785 59.3573 72.5089C61.6982 71.7206 63.5391 70.6319 64.88 69.2429C66.2209 67.8351 66.8914 66.1927 66.8914 64.3157C66.8914 62.6076 66.3005 61.2092 65.1187 60.1205C63.9596 59.0319 62.38 58.1309 60.38 57.4176C58.4027 56.7044 56.1641 56.0756 53.6641 55.5312L45.4141 53.673C39.8232 52.4153 35.3914 50.5665 32.1187 48.1263C28.8687 45.6862 27.2437 42.4577 27.2437 38.4408C27.2437 35.1185 28.3346 32.2185 30.5164 29.7408C32.6982 27.2631 35.6527 25.3392 39.38 23.9689C43.1073 22.5799 47.3118 21.8854 51.9937 21.8854C56.7209 21.8854 60.8914 22.5706 64.505 23.9408C68.1414 25.311 71.005 27.1974 73.0959 29.6C75.1868 31.9839 76.2777 34.7243 76.3687 37.8214H66.2096Z" fill="url(#paint1_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="1.23267e-06" y1="8.7248" x2="99.6891" y2="102.708" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="var(--studio-primary-500)"/>
+                                <stop offset="1" stop-color="var(--studio-secondary-500)"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear" x1="25.3687" y1="26.9091" x2="81.8625" y2="73.7083" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="var(--studio-primary-500)"/>
+                                <stop offset="1" stop-color="var(--studio-secondary-500)"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="studio-title">The Studio</div>
+                </div>
             </div>
 
             <div class="studio-right-content">
-                <!-- Projects Section -->
+                <!-- Client Section -->
                 <div class="studio-section">
-                    <h3 class="studio-section-title">Projects</h3>
+                    <h3 class="studio-section-title">Client</h3>
                     
                     <div class="studio-field">
+                        <button class="studio-button secondary" style="display: flex; align-items: center; justify-content: space-between;">
+                            <span>+ Add Client</span>
+                        </button>
+                    </div>
+
+                    <div class="studio-field">
                         <select class="studio-select">
-                            <option value="villa-capriani">Villa Capriani</option>
-                            <option value="middleton-getaways">Middleton Getaways</option>
-                            <option value="villa-soleil" selected>Villa Soleil</option>
+                            <option>Villa Capriani</option>
                         </select>
+                        <div style="display: flex; gap: var(--studio-space-2); margin-top: var(--studio-space-2);">
+                            <button class="studio-button secondary" style="flex: 1; text-transform: none; letter-spacing: normal;">✏️ Edit</button>
+                            <button class="studio-button secondary" style="flex: 1; text-transform: none; letter-spacing: normal;">🗑️ Delete</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Brand Colors Section -->
+                <!-- Color Management Section -->
                 <div class="studio-section">
-                    <h3 class="studio-section-title">Brand Colors</h3>
+                    <h3 class="studio-section-title">Color Management</h3>
                     
                     <div class="studio-field">
                         <button class="studio-button secondary" style="display: flex; align-items: center; justify-content: space-between;">

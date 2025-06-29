@@ -1,0 +1,22 @@
+# Studio Project Configuration
+# These rules help Claude maintain clean codebase standards
+
+[cleanup_rules]
+delete_after_consolidation=true
+remove_unused_code=true
+no_commented_code=true
+single_source_truth=true
+
+[file_patterns_to_clean]
+debug_files=["*.log", "debug.js", "test-*.html"]
+backup_files=["*.bak", "*-backup.*", "*-old.*"]
+temp_files=["tmp-*", "temp-*", ".temp"]
+
+[always_remove]
+console_logs=true
+empty_directories=true
+unused_imports=true
+ds_store_files=true
+
+# Claude: Always reference this file for cleanup standards
+# User preference: Delete rather than comment out unused code

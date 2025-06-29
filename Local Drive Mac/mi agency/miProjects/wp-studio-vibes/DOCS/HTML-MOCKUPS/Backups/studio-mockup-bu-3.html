@@ -74,78 +74,76 @@
             --studio-border-medium: 2px;    /* Controls, toggles, interactive elements */
             --studio-border-thick: 3px;     /* Cards, primary content elements */
 
-            /* Spacing Scale (Usage: 62 total applications) */
-            --studio-space-1: 0.25rem;     /* Micro spacing: nav item margins, fine adjustments (6 uses) */
-            --studio-space-2: 0.5rem;      /* Tight spacing: button padding, control gaps (13 uses) */
-            --studio-space-3: 0.75rem;     /* Element spacing: between related items, form padding (18 uses) */
-            --studio-space-4: 1rem;        /* Container spacing: card padding, form elements (11 uses) */
-            --studio-space-5: 2rem;        /* Section spacing: sidebar padding, major gaps (9 uses) */
-            --studio-space-6: 3rem;        /* Content spacing: between sections, major margins (9 uses) */
-            --studio-space-8: 4rem;        /* Large spacing: content areas, major separations (2 uses) */
-            --studio-space-10: 5rem;       /* Extra large spacing: special layouts (1 use) */
-            --studio-space-12: 6rem;       /* Maximum spacing: largest separations (1 use) */
+            /* Spacing Scale */
+            --studio-space-1: 0.25rem;
+            --studio-space-2: 0.5rem;
+            --studio-space-3: 0.75rem;
+            --studio-space-4: 1rem;
+            --studio-space-5: 2rem;
+            --studio-space-6: 3rem;
+            --studio-space-8: 4rem;
+            --studio-space-10: 5rem;
+            --studio-space-12: 6rem;
         }
 
-        /* Light Mode Theme Colors */
+        /* Light Mode */
         :root, [data-theme="light"] {
-            /* Background Colors (Usage: 15 components) */
-            --studio-bg-main: var(--studio-base-50);           /* Page background (1 use) */
-            --studio-bg-header: var(--studio-base-200);        /* Top header background (1 use) */
-            --studio-bg-section-header: var(--studio-base-200); /* Section headers (1 use) */
-            --studio-bg-sidebar: var(--studio-base-100);       /* Left sidebar background (3 uses) */
-            --studio-bg-sidebar-header: var(--studio-base-300); /* Sidebar header (2 uses) */
-            --studio-bg-card: var(--studio-base-200);          /* Color cards, overlays (7 uses) */
-            --studio-bg-controls: var(--studio-base-100);      /* Control backgrounds (1 use) */
-            --studio-bg-input: var(--studio-base-200);         /* Form inputs, selects (3 uses) */
-            --studio-bg-button: var(--studio-base-300);        /* Button backgrounds (1 use) */
+            --studio-bg-main: var(--studio-base-50);           /* Dark: 950 → Light: 50 */
+            --studio-bg-header: var(--studio-base-200);        /* Dark: 700 → Light: 200 (swapped) */
+            --studio-bg-section-header: var(--studio-base-200); /* Dark: 800 → Light: 200 */
+            --studio-bg-sidebar: var(--studio-base-100);       /* Dark: 900 → Light: 100 */
+            --studio-bg-sidebar-header: var(--studio-base-300); /* Dark: 800 → Light: 300 (swapped) */
+            --studio-bg-card: var(--studio-base-200);          /* Dark: 800 → Light: 200 */
+            --studio-bg-controls: var(--studio-base-100);      /* Dark: 900 → Light: 100 */
+            --studio-bg-input: var(--studio-base-200);         /* Dark: 800 → Light: 200 */
+            --studio-bg-button: var(--studio-base-300);        /* Dark: 700 → Light: 300 */
             
-            /* Text Colors - Semantic System (Usage: 50+ components) */
-            --studio-text-content: var(--studio-base-950);     /* Main content, card titles (8 uses) */
-            --studio-text-supporting: var(--studio-base-700);  /* Descriptions, labels (6 uses) */
-            --studio-text-subtle: var(--studio-base-600);      /* Metadata, secondary info (11 uses) */
-            --studio-text-navigation: var(--studio-base-900);  /* Navigation items (3 uses) */
-            --studio-text-heading: var(--studio-base-900);     /* Section titles, headings (1 use) */
-            --studio-text-emphasis: var(--studio-base-950);    /* Active states, emphasis (3 uses) */
+            /* Text Colors - Semantic System */
+            --studio-text-content: var(--studio-base-950);     /* Main content, card titles, body text */
+            --studio-text-supporting: var(--studio-base-700);  /* Descriptions, labels, form controls */
+            --studio-text-subtle: var(--studio-base-600);      /* Metadata, codes, timestamps */
+            --studio-text-navigation: var(--studio-base-900);  /* Navigation items, sidebar titles */
+            --studio-text-heading: var(--studio-base-900);     /* Section titles, main headings */
+            --studio-text-emphasis: var(--studio-base-950);    /* Active states, emphasized text */
             
-            /* Border Colors - Semantic System (Usage: 14 components) */
-            --studio-border-ui: var(--studio-base-300);         /* General UI: forms, inputs, close buttons (5 uses) */
-            --studio-border-interactive: var(--studio-base-400); /* Interactive: toggles, control icons (3 uses) */
-            --studio-border-primary: var(--studio-base-300);    /* Primary content: cards, sections (3 uses) */
-            --studio-border-accent: var(--studio-base-700);     /* Accent elements: color dots, slider handles (2 uses) */
-            --studio-border-ghost: var(--studio-base-400);      /* Ghost widgets: add buttons, placeholders (2 uses) */
-            --studio-border-ghost-hover: var(--studio-base-500); /* Ghost hover states (0 direct uses) */
+            /* Border Colors - Semantic System */
+            --studio-border-ui: var(--studio-base-300);         /* General UI borders (forms, buttons) */
+            --studio-border-interactive: var(--studio-base-400); /* Interactive elements (toggles, controls) */
+            --studio-border-primary: var(--studio-base-300);    /* Primary content borders (cards, sections) */
+            --studio-border-accent: var(--studio-base-700);     /* Accent borders (color dots, highlights) */
+            --studio-border-ghost: var(--studio-base-400);      /* Ghost widget borders */
+            --studio-border-ghost-hover: var(--studio-base-500); /* Ghost widget hover borders */
         }
 
         /* Light Mode Specific Overrides */
 
-        /* Dark Mode Theme Colors */
+        /* Dark Mode */
         [data-theme="dark"] {
-            /* Background Colors (Dark Mode - Higher Contrast) */
-            --studio-bg-main: var(--studio-base-950);           /* Dark page background */
-            --studio-bg-header: var(--studio-base-800);         /* Dark header background */
-            --studio-bg-section-header: var(--studio-base-800); /* Dark section headers */
-            --studio-bg-sidebar: var(--studio-base-900);        /* Dark sidebar background */
-            --studio-bg-sidebar-header: var(--studio-base-700); /* Dark sidebar header */
-            --studio-bg-card: var(--studio-base-800);           /* Dark card backgrounds */
-            --studio-bg-controls: var(--studio-base-900);       /* Dark control backgrounds */
-            --studio-bg-input: var(--studio-base-800);          /* Dark form inputs */
-            --studio-bg-button: var(--studio-base-700);         /* Dark button backgrounds */
+            --studio-bg-main: var(--studio-base-950);
+            --studio-bg-header: var(--studio-base-800);
+            --studio-bg-section-header: var(--studio-base-800);
+            --studio-bg-sidebar: var(--studio-base-900);
+            --studio-bg-sidebar-header: var(--studio-base-700);
+            --studio-bg-card: var(--studio-base-800);
+            --studio-bg-controls: var(--studio-base-900);
+            --studio-bg-input: var(--studio-base-800);
+            --studio-bg-button: var(--studio-base-700);
             
-            /* Text Colors - Semantic System (Dark Mode - Light Text) */
-            --studio-text-content: var(--studio-base-50);       /* Light main content text */
-            --studio-text-supporting: var(--studio-base-300);   /* Light supporting text */
-            --studio-text-subtle: var(--studio-base-400);       /* Medium subtle text */
-            --studio-text-navigation: var(--studio-base-100);   /* Light navigation text */
-            --studio-text-emphasis: var(--studio-base-50);      /* Bright emphasis text */
-            --studio-text-heading: var(--studio-base-100);      /* Light heading text */
+            /* Text Colors - Semantic System (Dark Mode) */
+            --studio-text-content: var(--studio-base-50);
+            --studio-text-supporting: var(--studio-base-300);
+            --studio-text-subtle: var(--studio-base-400);
+            --studio-text-navigation: var(--studio-base-100);
+            --studio-text-emphasis: var(--studio-base-50);
+            --studio-text-heading: var(--studio-base-100);
             
-            /* Border Colors - Semantic System (Dark Mode - Higher Contrast) */
-            --studio-border-ui: var(--studio-base-500);         /* Medium UI borders */
-            --studio-border-interactive: var(--studio-base-600); /* Darker interactive borders */
-            --studio-border-primary: var(--studio-base-700);    /* Dark primary borders */
-            --studio-border-accent: var(--studio-base-50);      /* Bright accent borders */
-            --studio-border-ghost: var(--studio-base-600);      /* Dark ghost borders */
-            --studio-border-ghost-hover: var(--studio-base-500); /* Lighter ghost hover */
+            /* Border Colors - Semantic System (Dark Mode) */
+            --studio-border-ui: var(--studio-base-500);         /* General UI borders (forms, buttons) */
+            --studio-border-interactive: var(--studio-base-600); /* Interactive elements (toggles, controls) */
+            --studio-border-primary: var(--studio-base-700);    /* Primary content borders (cards, sections) */
+            --studio-border-accent: var(--studio-base-50);      /* Accent borders (color dots, highlights) */
+            --studio-border-ghost: var(--studio-base-600);      /* Ghost widget borders */
+            --studio-border-ghost-hover: var(--studio-base-500); /* Ghost widget hover borders */
         }
 
         /* ================================== */
