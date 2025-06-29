@@ -1,0 +1,418 @@
+/*
+Theme Name: STUDIO BLOCKSY CHILD
+Description: Studio Design System admin theme built as a Blocksy child theme. Combines Blocksy's powerful features with Studio branding and design system administration tools.
+Author: Studio Design Team
+Template: blocksy
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: studio-blocksy-child
+Tags: blocksy, child-theme, admin, design-system, studio
+
+Studio Blocksy Child Theme
+Extends Blocksy theme with Studio Design System administration capabilities.
+Features Studio branding, semantic CSS variables, and admin interface optimizations.
+*/
+
+/* Import Parent Theme Styles */
+@import url("../blocksy/style.css");
+
+/* ================================== */
+/* STUDIO DESIGN SYSTEM VARIABLES    */
+/* ================================== */
+
+:root {
+    /* Studio Brand Colors - Override Blocksy defaults */
+    --theme-palette-color-1: rgb(39, 104, 96);     /* Studio Teal Primary */
+    --theme-palette-color-2: rgb(112, 153, 51);    /* Studio Green Secondary */
+    --theme-palette-color-3: #f8f8f8;              /* Light Background */
+    --theme-palette-color-4: #262626;              /* Dark Background */
+    --theme-palette-color-5: #ffffff;              /* Pure White */
+    --theme-palette-color-6: #000000;              /* Pure Black */
+    --theme-palette-color-7: #e8e8e8;              /* Light Gray */
+    --theme-palette-color-8: #737373;              /* Medium Gray */
+
+    /* Base Colors (Neutrals) - Studio System */
+    --studio-base-50: #ffffff;
+    --studio-base-100: #f8f8f8;
+    --studio-base-200: #e8e8e8;
+    --studio-base-300: #d1d1d1;
+    --studio-base-400: #a0a0a0;
+    --studio-base-500: #737373;
+    --studio-base-600: #525252;
+    --studio-base-700: #404040;
+    --studio-base-800: #262626;
+    --studio-base-900: #171717;
+    --studio-base-950: #000000;
+
+    /* Primary Colors (Studio Teal) */
+    --studio-primary-50: #f0fdfa;
+    --studio-primary-100: #ccfbf1;
+    --studio-primary-200: #99f6e4;
+    --studio-primary-300: #5eead4;
+    --studio-primary-400: #2dd4bf;
+    --studio-primary-500: rgb(39, 104, 96);
+    --studio-primary-600: #0d9488;
+    --studio-primary-700: #0f766e;
+    --studio-primary-800: #115e59;
+    --studio-primary-900: #134e4a;
+
+    /* Secondary Colors (Studio Green) */
+    --studio-secondary-50: #f7fee7;
+    --studio-secondary-100: #ecfccb;
+    --studio-secondary-200: #d9f99d;
+    --studio-secondary-300: #bef264;
+    --studio-secondary-400: #a3e635;
+    --studio-secondary-500: rgb(112, 153, 51);
+    --studio-secondary-600: #65a30d;
+    --studio-secondary-700: #4d7c0f;
+    --studio-secondary-800: #3f6212;
+    --studio-secondary-900: #365314;
+    
+    /* Typography - Semantic Text System */
+    --studio-font-family: 'Montserrat', system-ui, sans-serif;
+    --studio-text-metadata: 0.75rem;        /* 12px - nav section titles, timestamps */
+    --studio-text-interface: 0.875rem;      /* 14px - nav items, buttons, format tabs, form labels */
+    --studio-text-body: 1rem;               /* 16px - main body text, default size */
+    --studio-text-description: 1.0625rem;   /* 17px - section descriptions, help text */
+    --studio-text-card-title: 1.125rem;     /* 18px - card headers, component titles */
+    --studio-text-section-title: 1.25rem;   /* 20px - section titles in main content */
+    --studio-text-icon: 1.5rem;             /* 24px - icon font sizes in navigation */
+    --studio-text-page-title: 1.875rem;     /* 30px - main page title with gradient */
+    --studio-text-accent-icon: 2rem;        /* 32px - large accent icons */
+
+    /* Border Radius - Blocksy Compatible */
+    --studio-radius-sm: 0.375rem;    /* Small elements */
+    --studio-radius: 0.5rem;         /* Standard controls */
+    --studio-radius-md: 0.625rem;    /* Medium elements */
+    --studio-radius-lg: 0.75rem;     /* Important controls */
+    --studio-radius-xl: 1rem;        /* Major containers */
+
+    /* Border Thickness - Semantic System */
+    --studio-border-thin: 1px;      /* Forms, buttons, small UI elements */
+    --studio-border-medium: 2px;    /* Controls, toggles, interactive elements */
+    --studio-border-thick: 3px;     /* Cards, primary content elements */
+
+    /* Spacing Scale - Compatible with Blocksy */
+    --studio-space-1: 0.25rem;     /* Micro spacing */
+    --studio-space-2: 0.5rem;      /* Tight spacing */
+    --studio-space-3: 0.75rem;     /* Element spacing */
+    --studio-space-4: 1rem;        /* Container spacing */
+    --studio-space-5: 2rem;        /* Section spacing */
+    --studio-space-6: 3rem;        /* Content spacing */
+    --studio-space-8: 4rem;        /* Large spacing */
+    --studio-space-10: 5rem;       /* Extra large spacing */
+    --studio-space-12: 6rem;       /* Maximum spacing */
+
+    /* Override Blocksy Font Family */
+    --theme-font-family: var(--studio-font-family);
+}
+
+/* Light Mode Theme Colors */
+:root, [data-theme="light"] {
+    /* Background Colors */
+    --studio-bg-main: var(--studio-base-50);           /* Page background */
+    --studio-bg-header: var(--studio-base-200);        /* Top header background */
+    --studio-bg-section-header: var(--studio-base-200); /* Section headers */
+    --studio-bg-sidebar: var(--studio-base-100);       /* Left sidebar background */
+    --studio-bg-sidebar-header: var(--studio-base-300); /* Sidebar header */
+    --studio-bg-card: var(--studio-base-200);          /* Cards, overlays */
+    --studio-bg-controls: var(--studio-base-100);      /* Control backgrounds */
+    --studio-bg-input: var(--studio-base-200);         /* Form inputs, selects */
+    --studio-bg-button: var(--studio-base-300);        /* Button backgrounds */
+
+    /* Text Colors */
+    --studio-text-content: var(--studio-base-950);     /* Main content text */
+    --studio-text-supporting: var(--studio-base-700);  /* Supporting text */
+    --studio-text-subtle: var(--studio-base-600);      /* Subtle text */
+    --studio-text-navigation: var(--studio-base-900);  /* Navigation text */
+    --studio-text-heading: var(--studio-base-900);     /* Section titles */
+    --studio-text-emphasis: var(--studio-base-950);    /* Emphasized text */
+
+    /* Border Colors */
+    --studio-border-ui: var(--studio-base-300);        /* General UI borders */
+    --studio-border-interactive: var(--studio-base-400); /* Interactive elements */
+    --studio-border-primary: var(--studio-base-300);   /* Primary content borders */
+    --studio-border-accent: var(--studio-base-700);    /* Accent borders */
+    --studio-border-ghost: var(--studio-base-400);     /* Ghost widget borders */
+    --studio-border-ghost-hover: var(--studio-base-500); /* Ghost hover states */
+}
+
+/* Dark Mode Theme Colors */
+[data-theme="dark"] {
+    /* Background Colors */
+    --studio-bg-main: var(--studio-base-950);          /* Page background */
+    --studio-bg-header: var(--studio-base-800);        /* Top header background */
+    --studio-bg-section-header: var(--studio-base-800); /* Section headers */
+    --studio-bg-sidebar: var(--studio-base-900);       /* Left sidebar background */
+    --studio-bg-sidebar-header: var(--studio-base-700); /* Sidebar header */
+    --studio-bg-card: var(--studio-base-800);          /* Cards, overlays */
+    --studio-bg-controls: var(--studio-base-900);      /* Control backgrounds */
+    --studio-bg-input: var(--studio-base-800);         /* Form inputs, selects */
+    --studio-bg-button: var(--studio-base-700);        /* Button backgrounds */
+
+    /* Text Colors */
+    --studio-text-content: var(--studio-base-50);      /* Main content text */
+    --studio-text-supporting: var(--studio-base-300);  /* Supporting text */
+    --studio-text-subtle: var(--studio-base-400);      /* Subtle text */
+    --studio-text-navigation: var(--studio-base-100);  /* Navigation text */
+    --studio-text-heading: var(--studio-base-100);     /* Section titles */
+    --studio-text-emphasis: var(--studio-base-50);     /* Emphasized text */
+
+    /* Border Colors */
+    --studio-border-ui: var(--studio-base-500);        /* General UI borders */
+    --studio-border-interactive: var(--studio-base-600); /* Interactive elements */
+    --studio-border-primary: var(--studio-base-700);   /* Primary content borders */
+    --studio-border-accent: var(--studio-base-50);     /* Accent borders */
+    --studio-border-ghost: var(--studio-base-600);     /* Ghost widget borders */
+    --studio-border-ghost-hover: var(--studio-base-500); /* Ghost hover states */
+}
+
+/* ================================== */
+/* BLOCKSY INTEGRATION & OVERRIDES   */
+/* ================================== */
+
+/* Override Blocksy Primary Color */
+.ct-button, 
+.wp-block-button__link,
+.ct-link-button {
+    background-color: var(--studio-primary-500) !important;
+    border-color: var(--studio-primary-500) !important;
+}
+
+.ct-button:hover,
+.wp-block-button__link:hover {
+    background-color: var(--studio-primary-600) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(39, 104, 96, 0.3);
+}
+
+/* Override Blocksy Typography */
+body {
+    font-family: var(--studio-font-family) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--studio-font-family) !important;
+}
+
+/* Blocksy Header Customization */
+.ct-header {
+    border-bottom: var(--studio-border-thin) solid var(--studio-border-ui);
+}
+
+.site-title a {
+    background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Blocksy Navigation */
+.ct-header [data-id="menu"] > ul > li > a {
+    color: var(--studio-text-navigation);
+    font-size: var(--studio-text-interface);
+}
+
+.ct-header [data-id="menu"] > ul > li > a:hover {
+    color: var(--studio-primary-500);
+}
+
+/* ================================== */
+/* STUDIO BRANDING ELEMENTS          */
+/* ================================== */
+
+.studio-brand-title {
+    font-size: var(--studio-text-page-title);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--studio-space-4);
+}
+
+.studio-brand-accent {
+    color: var(--studio-primary-500);
+}
+
+.studio-gradient-bg {
+    background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
+}
+
+/* ================================== */
+/* ADMIN INTERFACE ELEMENTS          */
+/* ================================== */
+
+/* Studio Admin Cards */
+.studio-admin-card {
+    background-color: var(--studio-bg-card);
+    border: var(--studio-border-thin) solid var(--studio-border-primary);
+    border-radius: var(--studio-radius-xl);
+    padding: var(--studio-space-4);
+    margin-bottom: var(--studio-space-4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Studio Admin Buttons */
+.studio-admin-button {
+    padding: var(--studio-space-3) var(--studio-space-4);
+    border: var(--studio-border-thin) solid var(--studio-primary-500);
+    border-radius: var(--studio-radius);
+    background-color: var(--studio-primary-500);
+    color: white;
+    font-size: var(--studio-text-interface);
+    font-family: var(--studio-font-family);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.studio-admin-button:hover {
+    background-color: var(--studio-primary-600);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(39, 104, 96, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+/* Studio Form Elements */
+.studio-admin-input {
+    width: 100%;
+    padding: var(--studio-space-3);
+    border: var(--studio-border-thin) solid var(--studio-border-ui);
+    border-radius: var(--studio-radius);
+    background-color: var(--studio-bg-input);
+    color: var(--studio-text-content);
+    font-size: var(--studio-text-interface);
+    font-family: var(--studio-font-family);
+}
+
+.studio-admin-input:focus {
+    outline: none;
+    border-color: var(--studio-primary-500);
+    box-shadow: 0 0 0 2px rgba(39, 104, 96, 0.2);
+}
+
+/* ================================== */
+/* BLOCKSY CONTENT AREA OVERRIDES    */
+/* ================================== */
+
+/* Content Area Styling */
+.ct-container {
+    max-width: 1200px;
+}
+
+.content-area {
+    padding: var(--studio-space-5) 0;
+}
+
+/* Post/Page Content */
+.entry-content {
+    font-family: var(--studio-font-family);
+    line-height: 1.6;
+    color: var(--studio-text-content);
+}
+
+.entry-title {
+    color: var(--studio-text-heading);
+    font-family: var(--studio-font-family);
+}
+
+/* ================================== */
+/* STUDIO UTILITY CLASSES            */
+/* ================================== */
+
+.studio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--studio-space-4);
+}
+
+.studio-flex {
+    display: flex;
+}
+
+.studio-flex-column {
+    flex-direction: column;
+}
+
+.studio-flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.studio-gap-1 { gap: var(--studio-space-1); }
+.studio-gap-2 { gap: var(--studio-space-2); }
+.studio-gap-3 { gap: var(--studio-space-3); }
+.studio-gap-4 { gap: var(--studio-space-4); }
+.studio-gap-5 { gap: var(--studio-space-5); }
+
+.studio-text-center { text-align: center; }
+.studio-text-left { text-align: left; }
+.studio-text-right { text-align: right; }
+
+.studio-mb-1 { margin-bottom: var(--studio-space-1); }
+.studio-mb-2 { margin-bottom: var(--studio-space-2); }
+.studio-mb-3 { margin-bottom: var(--studio-space-3); }
+.studio-mb-4 { margin-bottom: var(--studio-space-4); }
+.studio-mb-5 { margin-bottom: var(--studio-space-5); }
+
+.studio-mt-1 { margin-top: var(--studio-space-1); }
+.studio-mt-2 { margin-top: var(--studio-space-2); }
+.studio-mt-3 { margin-top: var(--studio-space-3); }
+.studio-mt-4 { margin-top: var(--studio-space-4); }
+.studio-mt-5 { margin-top: var(--studio-space-5); }
+
+/* ================================== */
+/* DEVELOPMENT NOTICE                */
+/* ================================== */
+
+.studio-dev-notice {
+    background: linear-gradient(135deg, var(--studio-primary-500), var(--studio-secondary-500));
+    color: white;
+    padding: var(--studio-space-4);
+    text-align: center;
+    font-weight: 600;
+    border-radius: var(--studio-radius);
+    margin: var(--studio-space-4) 0;
+}
+
+/* ================================== */
+/* RESPONSIVE DESIGN                 */
+/* ================================== */
+
+@media (max-width: 768px) {
+    .studio-container {
+        padding: 0 var(--studio-space-3);
+    }
+    
+    .studio-brand-title {
+        font-size: var(--studio-text-section-title);
+    }
+    
+    .studio-flex {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .studio-container {
+        padding: 0 var(--studio-space-2);
+    }
+    
+    .studio-admin-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: var(--studio-space-2);
+    }
+}
